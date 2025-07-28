@@ -20,31 +20,53 @@
   </header>
 
   <main>
-    <img src="images/types_of_coffee_91a828a5-7ff3-427d-acaa-c8b7289c9e5a_1024x.webp" alt="Freshly brewed coffee" style="width: 100%; height: 400px; border-radius:10px; margin-bottom:20px;">
-    <h2>Welcome to Live Coffee</h2>
-    <p>Your go-to for ethically sourced, Dublin-roasted specialty coffee. Taste the story in every cup.</p>
+    <div style="background: linear-gradient(90deg, #f8e7d2 60%, #fffbe7 100%); border-radius: 16px; box-shadow: 0 4px 24px #e0c9a6; padding: 32px 24px 24px 24px; margin-bottom: 32px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
+      <img src="images/types_of_coffee_91a828a5-7ff3-427d-acaa-c8b7289c9e5a_1024x.webp" alt="Freshly brewed coffee" style="width: 340px; height: 260px; border-radius:14px; box-shadow:0 2px 12px #c9b18a; object-fit:cover;">
+      <div style="flex:1; min-width:220px;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size:2.2rem; color:#6b3e26; margin-bottom:10px;">Welcome to <span style="color:#b77b3e;">Live Coffee</span></h2>
+        <p style="font-size:1.1rem; color:#4d3a2a;">Your go-to for ethically sourced, Dublin-roasted specialty coffee.<br> Taste the story in every cup.</p>
+        <button style="margin-top:18px; background:#b77b3e; color:#fff; border:none; border-radius:6px; padding:10px 22px; font-size:1rem; cursor:pointer; box-shadow:0 2px 8px #e0c9a6; transition:background 0.2s;" onmouseover="this.style.background='#6b3e26'" onmouseout="this.style.background='#b77b3e'">Shop Now</button>
+      </div>
+    </div>
 
     <!-- Coffee Image Gallery -->
     <section id="coffee-gallery" style="margin-top:30px;">
-      <h3 style="margin-bottom:15px;">Our Coffee Selection</h3>
-      <div style="display:flex; gap:18px; flex-wrap:wrap; justify-content:center;">
-        <figure style="margin:0; text-align:center;">
-          <img src="https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&w=400&h=140&fit=crop" alt="Classic Espresso Shot" style="width: 180px; height: 140px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
-          <figcaption style="font-size:13px; margin-top:6px; color:#444;">Classic Espresso</figcaption>
-        </figure>
-        <figure style="margin:0; text-align:center;">
-          <img src="https://images.pexels.com/photos/34085/pexels-photo.jpg?auto=compress&w=400&h=140&fit=crop" alt="Foamy Cappuccino" style="width: 180px; height: 140px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
-          <figcaption style="font-size:13px; margin-top:6px; color:#444;">Foamy Cappuccino</figcaption>
-        </figure>
-        <figure style="margin:0; text-align:center;">
-          <img src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&w=400&h=140&fit=crop" alt="Creamy Latte Art" style="width: 180px; height: 140px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
-          <figcaption style="font-size:13px; margin-top:6px; color:#444;">Creamy Latte Art</figcaption>
-        </figure>
-        <figure style="margin:0; text-align:center;">
-          <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&w=400&h=140&fit=crop" alt="Handcrafted Pour Over" style="width: 180px; height: 140px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
-          <figcaption style="font-size:13px; margin-top:6px; color:#444;">Handcrafted Pour Over</figcaption>
-        </figure>
+      <h3 style="margin-bottom:18px; font-family:'Playfair Display',serif; color:#6b3e26;">Our Coffee Selection</h3>
+      <div id="coffee-products" style="display:flex; gap:24px; flex-wrap:wrap; justify-content:center;">
+        <div class="coffee-card" style="background:#fffbe7; border-radius:12px; box-shadow:0 2px 12px #e0c9a6; padding:18px 12px; width:200px; text-align:center;">
+          <img src="https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&w=400&h=140&fit=crop" alt="Classic Espresso Shot" style="width: 170px; height: 120px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
+          <div style="font-size:15px; margin:10px 0 4px 0; color:#6b3e26; font-weight:bold;">Classic Espresso</div>
+          <div style="font-size:13px; color:#7a5c3e;">Rich, bold, and aromatic.</div>
+          <button class="add-cart-btn" data-name="Classic Espresso" data-price="3.00" style="margin-top:10px; background:#b77b3e; color:#fff; border:none; border-radius:6px; padding:7px 16px; font-size:0.95rem; cursor:pointer; transition:background 0.2s;">Add to Cart</button>
+        </div>
+        <div class="coffee-card" style="background:#fffbe7; border-radius:12px; box-shadow:0 2px 12px #e0c9a6; padding:18px 12px; width:200px; text-align:center;">
+          <img src="https://images.pexels.com/photos/34085/pexels-photo.jpg?auto=compress&w=400&h=140&fit=crop" alt="Foamy Cappuccino" style="width: 170px; height: 120px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
+          <div style="font-size:15px; margin:10px 0 4px 0; color:#6b3e26; font-weight:bold;">Foamy Cappuccino</div>
+          <div style="font-size:13px; color:#7a5c3e;">Smooth, creamy, and frothy.</div>
+          <button class="add-cart-btn" data-name="Foamy Cappuccino" data-price="3.50" style="margin-top:10px; background:#b77b3e; color:#fff; border:none; border-radius:6px; padding:7px 16px; font-size:0.95rem; cursor:pointer; transition:background 0.2s;">Add to Cart</button>
+        </div>
+        <div class="coffee-card" style="background:#fffbe7; border-radius:12px; box-shadow:0 2px 12px #e0c9a6; padding:18px 12px; width:200px; text-align:center;">
+          <img src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&w=400&h=140&fit=crop" alt="Creamy Latte Art" style="width: 170px; height: 120px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
+          <div style="font-size:15px; margin:10px 0 4px 0; color:#6b3e26; font-weight:bold;">Creamy Latte Art</div>
+          <div style="font-size:13px; color:#7a5c3e;">Velvety milk and espresso.</div>
+          <button class="add-cart-btn" data-name="Creamy Latte Art" data-price="3.75" style="margin-top:10px; background:#b77b3e; color:#fff; border:none; border-radius:6px; padding:7px 16px; font-size:0.95rem; cursor:pointer; transition:background 0.2s;">Add to Cart</button>
+        </div>
+        <div class="coffee-card" style="background:#fffbe7; border-radius:12px; box-shadow:0 2px 12px #e0c9a6; padding:18px 12px; width:200px; text-align:center;">
+          <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&w=400&h=140&fit=crop" alt="Handcrafted Pour Over" style="width: 170px; height: 120px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px #ccc;">
+          <div style="font-size:15px; margin:10px 0 4px 0; color:#6b3e26; font-weight:bold;">Handcrafted Pour Over</div>
+          <div style="font-size:13px; color:#7a5c3e;">Clean, bright, and delicate.</div>
+          <button class="add-cart-btn" data-name="Handcrafted Pour Over" data-price="4.00" style="margin-top:10px; background:#b77b3e; color:#fff; border:none; border-radius:6px; padding:7px 16px; font-size:0.95rem; cursor:pointer; transition:background 0.2s;">Add to Cart</button>
+        </div>
       </div>
+    </section>
+
+    <!-- Cart and Checkout Section -->
+    <section id="cart-section" style="margin:40px auto 0 auto; max-width:600px; background:#fffbe7; border-radius:14px; box-shadow:0 2px 12px #e0c9a6; padding:24px 18px;">
+      <h3 style="color:#6b3e26; font-family:'Playfair Display',serif; margin-bottom:16px;">Your Cart</h3>
+      <div id="cart-items" style="min-height:40px; color:#4d3a2a; font-size:1.05rem;"></div>
+      <div style="margin-top:12px; font-weight:bold; color:#b77b3e;">Total: $<span id="cart-total">0.00</span></div>
+      <button id="checkout-btn" style="margin-top:18px; background:#6b3e26; color:#fff; border:none; border-radius:6px; padding:10px 22px; font-size:1rem; cursor:pointer; box-shadow:0 2px 8px #e0c9a6; transition:background 0.2s;">Checkout</button>
+      <div id="checkout-message" style="margin-top:16px; color:#2e7d32; font-weight:bold;"></div>
     </section>
   </main>
 
@@ -60,6 +82,14 @@
 </div>
 
 <style>
+#coffee-products .coffee-card:hover {
+  box-shadow: 0 4px 18px #b77b3e;
+  transform: translateY(-4px) scale(1.03);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.add-cart-btn:hover {
+  background: #6b3e26 !important;
+}
 #chatbot-container {
   position: fixed;
   bottom: 20px;
@@ -95,6 +125,48 @@
 </style>
 
 <script>
+// Cart and Checkout Functionality
+document.addEventListener("DOMContentLoaded", function() {
+  let cart = [];
+  const cartItemsDiv = document.getElementById("cart-items");
+  const cartTotalSpan = document.getElementById("cart-total");
+  const checkoutBtn = document.getElementById("checkout-btn");
+  const checkoutMsg = document.getElementById("checkout-message");
+
+  function updateCartDisplay() {
+    cartItemsDiv.innerHTML = cart.length === 0 ? '<em>Your cart is empty.</em>' :
+      cart.map((item, idx) => `<div style='margin-bottom:6px;'>${item.name} - $${item.price.toFixed(2)} <button onclick='removeCartItem(${idx})' style='margin-left:10px; background:#e57373; color:#fff; border:none; border-radius:4px; padding:2px 8px; font-size:0.9em; cursor:pointer;'>Remove</button></div>`).join("");
+    cartTotalSpan.textContent = cart.reduce((sum, item) => sum + item.price, 0).toFixed(2);
+  }
+
+  window.removeCartItem = function(idx) {
+    cart.splice(idx, 1);
+    updateCartDisplay();
+    checkoutMsg.textContent = "";
+  }
+
+  document.querySelectorAll('.add-cart-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const name = this.getAttribute('data-name');
+      const price = parseFloat(this.getAttribute('data-price'));
+      cart.push({name, price});
+      updateCartDisplay();
+      checkoutMsg.textContent = "";
+    });
+  });
+
+  checkoutBtn.addEventListener('click', function() {
+    if (cart.length === 0) {
+      checkoutMsg.textContent = "Your cart is empty. Please add some coffee!";
+      return;
+    }
+    checkoutMsg.textContent = "Thank you for your order! Your coffee will be ready soon.";
+    cart = [];
+    updateCartDisplay();
+  });
+
+  updateCartDisplay();
+});
 document.addEventListener("DOMContentLoaded", function() {
   const input = document.getElementById("chatbot-input");
   const messages = document.getElementById("chatbot-messages");
