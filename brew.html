@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <title>Brew Guide - Live Coffee</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .brew-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .method {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .method img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .method h3 {
+      margin: 10px 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Live Coffee</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="shop.html">Shop</a>
+      <a href="brew.html">Brew Guide</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Brew Guide</h2>
+    <div class="brew-grid">
+      <div class="method">
+        <img src="images/french-press.png" alt="French Press Method">
+        <h3>French Press</h3>
+        <p>Use 18g coffee to 300ml water, steep for 4 minutes. Press and pour.</p>
+      </div>
+      <div class="method">
+        <img src="images/pour-over.png" alt="Pour Over Method">
+        <h3>Pour Over</h3>
+        <p>Use 20g coffee to 320ml water, pour slowly in circular motion for best results.</p>
+      </div>
+      <div class="method">
+        <img src="images/aeropress.png" alt="Aeropress Method">
+        <h3>Aeropress</h3>
+        <p>Use 16g coffee with inverted method, brew for 2 minutes before pressing.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Live Coffee. All rights reserved.
+  </footer>
+</body>
+</html>

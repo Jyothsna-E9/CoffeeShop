@@ -1,0 +1,102 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fefefc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2e2e2e;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #3d3d3d;
+}
+
+
+nav {
+  text-align: center;
+}
+
+
+nav a:hover {
+  color: #a0522d;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f1ed;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.product, .method {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover, .method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product img, .method img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product:hover img, .method:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
